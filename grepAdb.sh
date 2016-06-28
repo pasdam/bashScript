@@ -13,7 +13,7 @@ if [[ ${#devices[@]} > 1  ]]; then
 	# show a list of devices from which select the use to use
 	echo "Found "${#devices[@]}" devices"
 	selected=-1
-	while [[  $selected -lt 0 && $selected -ge ${#devices[@]} ]]; do
+	while [[  $selected -lt 0 || $selected -ge ${#devices[@]} ]]; do
 		echo "Insert the number of the device to use:"
 		for index in "${!devices[@]}"
 		do
