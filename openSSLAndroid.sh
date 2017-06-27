@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# sources:
+# - https://stackoverflow.com/a/18577811/611595
+# - https://doc.qt.io/qt-5/opensslsupport.html
+
 OPENSSL_VERSION=1.0.2h
 # directory containing the openSSL archive
 WORKING_DIR=
